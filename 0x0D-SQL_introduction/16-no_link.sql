@@ -1,5 +1,6 @@
--- List all records of 'second_table' of db 'hbtn_0c_0'
-SELECT score, name
-FROM second_table
-HAVING name IS NOT NULL
-ORDER BY score DESC;
+-- Lists all records of the table second_table having a name value.
+-- Records are ordered by descending score.
+SELECT `score`, `name`
+FROM `second_table`
+WHERE `name` != ""
+ORDER BY `score` DESC
